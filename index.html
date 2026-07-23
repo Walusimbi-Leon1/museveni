@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yoweri Kaguta Museveni: President of Uganda — A Biography</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --uganda-black: #000000;
+    --uganda-yellow: #FCDC04;
+    --uganda-red: #D90000;
+    --uganda-white: #FFFFFF;
+    --text-dark: #1a1a1a;
+    --text-body: #2d2d2d;
+    --bg-cream: #FFF8F0;
+    --bg-warm: #FDF6EE;
+    --accent-gold: #B8860B;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Merriweather', Georgia, serif;
+    color: var(--text-body);
+    background: var(--bg-cream);
+    line-height: 1.7;
+  }
+
+  /* Hero Section */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, var(--uganda-black) 0%, #1a1a1a 50%, #2a1a1a 100%);
+    color: var(--uganda-white);
+    padding: 60px 30px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 8px;
+    background: linear-gradient(90deg, var(--uganda-black) 0%, var(--uganda-black) 33%, var(--uganda-yellow) 33%, var(--uganda-yellow) 66%, var(--uganda-red) 66%, var(--uganda-red) 100%);
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 8px;
+    background: linear-gradient(90deg, var(--uganda-red) 0%, var(--uganda-red) 33%, var(--uganda-yellow) 33%, var(--uganda-yellow) 66%, var(--uganda-black) 66%, var(--uganda-black) 100%);
+  }
+
+  .hero-badge {
+    font-size: 0.85em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    line-height: 1.1;
+  }
+
+  .hero-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--uganda-yellow);
+    margin-bottom: 15px;
+  }
+
+  .hero-tagline {
+    font-size: 1.2em;
+    font-style: italic;
+    max-width: 500px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+  }
+
+  .flag-band {
+    display: flex;
+    width: 200px;
+    height: 6px;
+    margin: 30px auto;
+  }
+
+  .flag-band div { flex: 1; }
+  .flag-band .black { background: var(--uganda-black); }
+  .flag-band .yellow { background: var(--uganda-yellow); }
+  .flag-band .red { background: var(--uganda-red); }
+
+  .hero-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    padding: 16px 40px;
+    background: var(--uganda-red);
+    color: var(--uganda-white);
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15em;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: 2px solid var(--uganda-red);
+  }
+
+  .btn-primary:hover {
+    background: transparent;
+    border-color: var(--uganda-yellow);
+    color: var(--uganda-white);
+  }
+
+  .btn-secondary {
+    display: inline-block;
+    padding: 16px 40px;
+    background: transparent;
+    color: var(--uganda-white);
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15em;
+    border-radius: 4px;
+    border: 2px solid var(--uganda-yellow);
+    transition: all 0.3s ease;
+  }
+
+  .btn-secondary:hover {
+    background: var(--uganda-yellow);
+    color: var(--uganda-black);
+  }
+
+  /* About Section */
+  .about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px 30px;
+  }
+
+  .section-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9em;
+    color: var(--uganda-red);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4em;
+    font-weight: 900;
+    color: var(--text-dark);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .about-text {
+    font-size: 1.1em;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+
+  .about-text em {
+    color: var(--uganda-red);
+    font-style: italic;
+  }
+
+  /* Stats Section */
+  .stats {
+    background: var(--uganda-white);
+    padding: 60px 30px;
+  }
+
+  .stats-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    text-align: center;
+  }
+
+  .stat-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    font-weight: 900;
+    color: var(--uganda-red);
+    margin-bottom: 5px;
+  }
+
+  .stat-item p {
+    font-size: 0.95em;
+    color: var(--text-dark);
+    opacity: 0.8;
+  }
+
+  /* Chapters Preview */
+  .chapters-preview {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px 30px;
+  }
+
+  .chapter-list {
+    list-style: none;
+    max-width: 600px;
+    margin: 30px auto 0;
+  }
+
+  .chapter-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #e8ddd0;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .chapter-list .num {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--uganda-red);
+    min-width: 30px;
+  }
+
+  .chapter-list .title {
+    font-size: 1.05em;
+  }
+
+  /* Support Section */
+  .support {
+    background: linear-gradient(135deg, var(--uganda-black) 0%, #1a1a1a 100%);
+    color: var(--uganda-white);
+    text-align: center;
+    padding: 80px 30px;
+  }
+
+  .support h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+
+  .support p {
+    max-width: 550px;
+    margin: 0 auto 30px;
+    opacity: 0.85;
+    font-size: 1.05em;
+  }
+
+  .support-btn {
+    display: inline-block;
+    padding: 16px 40px;
+    background: var(--uganda-red);
+    color: var(--uganda-white);
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15em;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+
+  .support-btn:hover {
+    background: var(--uganda-yellow);
+    color: var(--uganda-black);
+  }
+
+  /* Footer */
+  .site-footer {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 3px solid var(--uganda-yellow);
+    font-size: 0.9em;
+    color: var(--accent-gold);
+  }
+
+  .site-footer .flag-small {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 15px;
+  }
+
+  .site-footer .flag-small span {
+    width: 20px;
+    height: 4px;
+    display: block;
+  }
+
+  .sgss-badge {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    border: 1px solid #e8ddd0;
+    border-radius: 20px;
+    font-size: 0.85em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 768px) {
+    .hero-title { font-size: 2.5em; }
+    .hero-subtitle { font-size: 1.3em; }
+    .section-title { font-size: 1.8em; }
+    .hero-buttons { flex-direction: column; align-items: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">A Biography by Samuel George Ssemanda</div>
+  <div class="flag-band">
+    <div class="black"></div>
+    <div class="yellow"></div>
+    <div class="red"></div>
+  </div>
+  <div class="hero-title">Yoweri Kaguta<br>Museveni</div>
+  <div class="hero-subtitle">President of Uganda</div>
+  <div class="flag-band">
+    <div class="red"></div>
+    <div class="yellow"></div>
+    <div class="black"></div>
+  </div>
+  <div class="hero-tagline">The Man Who Shaped Modern Uganda</div>
+  <div class="hero-buttons">
+    <a href="v1.0/book.html" class="btn-primary">📖 Read Online</a>
+    <a href="v1.0/Museveni.pdf" class="btn-secondary">📥 Download PDF</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <div class="section-label">About the Book</div>
+  <div class="section-title">A Definitive Biography</div>
+  <p class="about-text">
+    <em>Yoweri Kaguta Museveni: President of Uganda</em> is a comprehensive biography that traces the life and career of one of Africa's most consequential leaders — from his birth in the rolling hills of Ntungamo to his decades-long stewardship of Uganda's transformation.
+  </p>
+  <p class="about-text">
+    Across fifteen meticulously researched chapters, this biography examines Museveni's revolutionary struggle in the bush, his economic reforms that transformed a collapsed economy into one of Africa's fastest-growing, his investments in education and health that lifted millions out of poverty, and his Pan-African vision that positioned Uganda as a leader in East African integration and continental cooperation.
+  </p>
+  <p class="about-text">
+    Written from the perspective of a strong, respected leader, this biography highlights Museveni's achievements, his role as a stabilizing force in East Africa, and his contributions to Uganda's development — offering readers a comprehensive portrait of a man who did not merely serve as president but shaped a nation.
+  </p>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="stats-grid">
+    <div class="stat-item">
+      <h3>15</h3>
+      <p>Chapters</p>
+    </div>
+    <div class="stat-item">
+      <h3>20K+</h3>
+      <p>Words</p>
+    </div>
+    <div class="stat-item">
+      <h3>40+</h3>
+      <p>Years in Leadership</p>
+    </div>
+    <div class="stat-item">
+      <h3>50+</h3>
+      <p>Famous Quotes</p>
+    </div>
+  </div>
+</section>
+
+<!-- CHAPTERS PREVIEW -->
+<section class="chapters-preview">
+  <div class="section-label">Table of Contents</div>
+  <div class="section-title">Fifteen Chapters</div>
+  <ul class="chapter-list">
+    <li><span class="num">I.</span><span class="title">The Man Who Shaped Modern Uganda</span></li>
+    <li><span class="num">II.</span><span class="title">Birth, Childhood, and Education</span></li>
+    <li><span class="num">III.</span><span class="title">The Bush War: Liberation Through Fire</span></li>
+    <li><span class="num">IV.</span><span class="title">Taking Power: A New Dawn</span></li>
+    <li><span class="num">V.</span><span class="title">Economic Reforms and National Revival</span></li>
+    <li><span class="num">VI.</span><span class="title">Stability and Security</span></li>
+    <li><span class="num">VII.</span><span class="title">Education and Health: Building Human Capital</span></li>
+    <li><span class="num">VIII.</span><span class="title">Infrastructure: The Backbone of Progress</span></li>
+    <li><span class="num">IX.</span><span class="title">Foreign Policy and Pan-African Leadership</span></li>
+    <li><span class="num">X.</span><span class="title">The LRA and Northern Uganda</span></li>
+    <li><span class="num">XI.</span><span class="title">Agriculture and Poverty Eradication</span></li>
+    <li><span class="num">XII.</span><span class="title">Leadership Style: The Museveni Doctrine</span></li>
+    <li><span class="num">XIII.</span><span class="title">Challenges and the Art of Navigation</span></li>
+    <li><span class="num">XIV.</span><span class="title">Famous Quotes and Speeches</span></li>
+    <li><span class="num">XV.</span><span class="title">Legacy: The Lion of the Pearl</span></li>
+  </ul>
+</section>
+
+<!-- SUPPORT -->
+<section class="support">
+  <h2>Enjoyed this book?</h2>
+  <p>If this biography has been valuable to you, consider supporting the author and the Samluki Global Scholarly Series (SGSS). Your support helps create more quality educational content.</p>
+  <a href="https://walusimbi-leon1.github.io/voice-support/" class="support-btn" target="_blank">Support Us ❤️</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="flag-small">
+    <span style="background:#000;"></span>
+    <span style="background:#FCDC04;"></span>
+    <span style="background:#D90000;"></span>
+  </div>
+  <p>Yoweri Kaguta Museveni: President of Uganda — A Biography</p>
+  <p>&copy; 2026 Samluki Global Scholarly Series. All rights reserved.</p>
+  <div class="sgss-badge">SGSS &bull; Samluki Global Scholarly Series</div>
+</footer>
+
+</body>
+</html>
