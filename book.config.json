@@ -1,0 +1,17 @@
+{
+  "title": "Museveni",
+  "subtitle": "Biography",
+  "genre": "Biography",
+  "author": "Walusimbi Leon (SGSS)",
+  "description": "Biography of President Yoweri Kaguta Museveni — from the bush war to the longest-serving president of Uganda — his life, leadership, and legacy.",
+  "style": "Authoritative, balanced, journalistic prose. Factual with narrative drive.",
+  "characters": "Yoweri Kaguta Museveni and the key figures of Uganda's modern history.",
+  "setting": "Uganda (Kikagati, Kampala) and the region.",
+  "notes": "Continue the biography in chronological order through his presidency, the wars, the politics, and the legacy. Keep it balanced and factual.",
+  "chapterTitle": "Chapter",
+  "mdFiles": ["v1.0/book.html"],
+  "htmlFiles": [],
+  "indexInject": null,
+  "mdHeadingLevel": 2,
+  "targetWords": 2000
+}
